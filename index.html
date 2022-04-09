@@ -11,12 +11,41 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
+<style>
+	body{
+		background-color:seashell;
+		font-family: arial;
+	}
+	h1{
+		font-size:2rem;
+	}
+	h2{
+		padding-left:10.25rem;
+	}
+	table{
+ 		border-spacing: 0rem; 
+    background-color: rgb(196, 193, 193);
+		border:0.05rem solid black;
+	}
+	td{
+		width:5rem;
+		text-align:center;
+		border:0.05rem solid black;
+		padding:0.3rem;
+    background-color: rgb(230, 229, 229);
+	}
+	th{
+		border:0.05rem solid black;
+	}
+	.footer{
+		color:blue; 
+		font-family:'Times New Roman';
+	}
+</style>
 
-<body style="background-color:seashell;">
+<body>
 
-	<h1 style="font-size:50px;"> Jacob Camarillo </h1>
-
-	<!-- <img src="Images\Lab_1_selfie.jpg" width="200" /> -->
+	<h1> Jacob Camarillo </h1>
 
 	<p>
 		Hello! I am Jacob Camarillo, I'm a second year transfer student majoring in Electrical Engineering. I'm from Sacramento, CA and moved to San Diego to attend college at UCSD.
@@ -25,24 +54,14 @@
 	</p>
 
 	<p>
-		Test paragraph.
+    You can follow our progress on our <a href="https://trello.com/b/Szf24DWH/ece140b-grocery-tracker" target="_blank">trello board</a>.
 	</p>
 
 	<hr>
 
-	<h2 style="padding-left:200px">My schedule</h2>
+	<h2>My Class Schedule</h2>
 
-	<style>
-		table{
-			border-spacing: 0 0px;
-		}
-		td{
-			width:80px;
-			text-align:center;
-			border:1px solid black;
-			padding:2.5px;
-		}
-	</style>
+
 	<table>
 		<tr>
 			<th>Time</th>
@@ -54,99 +73,84 @@
 		</tr>
 		<tr>
 			<td>9:00am - 10:00am</td>
+			<td>ECE 171A</td>
 			<td></td>
-			<td>ECE 102</td>
+			<td>ECE 171A</td>
 			<td></td>
-			<td>ECE 102</td>
-			<td></td>
+			<td>ECE 171A</td>
 		</tr>
 		<tr>
 			<td>10:00am - 11:00am</td>
 			<td></td>
-			<td>ECE 102</td>
 			<td></td>
-			<td>ECE 102</td>
+			<td></td>
+			<td></td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>11:00am - 12:00pm</td>
 			<td></td>
-			<td>ECE 140A</td>
 			<td></td>
-			<td>ECE 140A</td>
+			<td></td>
+			<td></td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>12:00pm - 1:00pm</td>
 			<td></td>
+			<td>ECE 140B</td>
 			<td></td>
-			<td></td>
-			<td></td>
-			<td>ECE 140A (lab)</td>
+			<td>ECE 140B</td>
+			<td>ECE 140B (lab)</td>
 		</tr>
 		<tr>
 			<td>1:00pm - 2:00pm</td>
+			<td>ECE 171A (disc)</td>
+			<td>ECE 140B</td>
 			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td>ECE 140A (lab)</td>
+			<td>ECE 140B</td>
+			<td>ECE 140B (lab)</td>
 		</tr>
 		<tr>
 			<td>2:00pm - 3:00pm</td>
+			<td>ECE 165 (disc)</td>
+			<td>ECE 165</td>
 			<td></td>
-			<td>ECE 141A</td>
-			<td></td>
-			<td>ECE 141A</td>
+			<td>ECE 165</td>
 			<td></td>
 		</tr>
 		<tr>
 			<td>3:00pm - 4:00pm</td>
+			<td>ECE 165 (lab)</td>
+			<td>ECE 141B</td>
 			<td></td>
-			<td>ECE 141A</td>
-			<td></td>
-			<td>ECE 141A</td>
-			<td></td>
+			<td>ECE 141B</td>
+			<td>ECE 141B (disc)</td>
 		</tr>
 		<tr>
 			<td>4:00pm - 5:00pm</td>
-			<td>ECE 141A (lab)</td>
 			<td></td>
+			<td>ECE 141B</td>
 			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>5:00pm - 6:00pm</td>
-			<td>ECE 111</td>
-			<td></td>
-			<td>ECE 111</td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>6:00pm - 7:00pm</td>
-			<td>ECE 111</td>
-			<td></td>
-			<td>ECE 111</td>
-			<td></td>
+			<td>ECE 141B</td>
 			<td></td>
 		</tr>
 	</table>
 	<hr>
 
-	<p style="color:blue; font-family:'Times New Roman';"><i>Contact Me: </i></p>
-
+	<p class = 'footer'><i>Contact Me: </i></p>
 
 	<ul>
-		<li>
-			<a href="https://www.ece.ucsd.edu/" target="_blank">ECE UCSD Homepage</a>
-		</li>
 		<li>
 			<a href="mailto:jcamarillo@ucsd.edu?subject=Hello">Email</a>
 		</li>
 	</ul>
-	<p style="color:blue">Other Links:</p>
+	<p class='footer'>Other Links:</p>
+	<ul>
+		<li>
+			<a href="https://www.ece.ucsd.edu/" target="_blank">UCSD ECE Homepage</a>
+		</li>
+	</ul>
 	<button> <a href="https://github.com/jcam306" target="=_blank"> <i class="fa fa-github fa-2x"></i> </a> </button>
 	<button> <a href="https://www.linkedin.com/in/jacob-camarillo-8b2911220/" target="_blank"> <i class="fa fa-linkedin fa-2x"> </i> </a> </button>
 
