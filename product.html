@@ -43,6 +43,12 @@
 	div{
 		text-align: left;
 	}
+	.benefits{
+		text-align: left;
+	}
+	.pages{
+		text-align:center;
+	}
 	.links{
 		margin: 0rem;
 		padding: 0.5rem;
@@ -76,11 +82,41 @@
 <body>
 	<div class = 'header'>
 		<h1>Product Information</h1>
-		<p class = 'info'>
-            In one page, describe the product your team is building.  Describe who the product is for, what it does, how it works, and mention the key benefits.		
-        </p>
 	</div>
 
+	<section>
+	<aside>
+		<h3> Who is this Product for?</h3>
+		We are building Grocery Tracker to be for busy people who buy groceries and can't get a smart fridge. Our key customers we are targeting are young parents, college students, young workers living alone, and apartment dwellers or renters that want something like a smart fridge but can't afford to spend thousands of dollars on one.
+	</aside>
+	<aside>
+		<h3> What does it do?</h3>
+		Our Grocery Tracker product uses a camera that keeps track of what is in the fridge, tells you what you have and how much while youre out shopping, a database that tracks when a product in the fridge expires or close to expiring, and can automatically order common products when they expire or run out.
+	</aside>
+	</section>
+	<section>
+	<aside>
+		<h3> How it works </h3>
+		Grocery Tracker consists of a camera, a contact sensor, and a raspberry pi (or pi zero if we can eventually get one...). The camera will take images of what the user is putting in/taking out of the fridge and update a database which stores each users inventory accordingly. The contact sensor will determine when the camera is active and images taken by the video will be sent to a Computer Vision algorithm or API to determine what each grocery item is.
+	</aside>
+	<aside>
+		<h3> Key Benefits</h3>
+		<ul class ='benefits'>
+			<li>The camera pod in the fridge scans products as they are added / removed</li>
+			<li>Lets you keep track of the amounts and expirations of each product and warns you when they run out / expire</li>
+			<li>Can be set to automatically restock certain groceries</li>
+			<li>Can scan a receipt instead of / in addition to using the camera to add new items to the database</li>
+			<li>Can scrape a recipe of the internet and tell you which ingredients you are missing</li>
+			<li>If you have multiple pods in the home, Grocery Tracker can tell you which fridge contains which food product</li>
+		</ul>
+		</aside>
+	</section>
+
+	<hr>
+	<div class = 'pages'>
+		<a style="font-size:20px" href="/">Home</a>
+		<a style="font-size:20px" href="/kvp">Key Value Proposition</a>
+	</div>
 	<hr>
 
 	<section class = 'links'>
