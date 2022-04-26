@@ -2,7 +2,6 @@
 <html>
 
 <head>
-
 	<title>Grocery Tracker</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 	<meta charset="utf-8">
@@ -31,6 +30,9 @@
 	section{
 		display:grid;
 		grid-template-columns: 1fr 1fr;
+		@media screen and (max-width: 960px) {
+			grid-template-columns: 1fr;
+		}
 	}
 	aside{
 		border:1.8px solid rgb(27, 192, 137);
@@ -41,6 +43,68 @@
 	}
 	div{
 		text-align: left;
+	}
+	:root {
+	--primary-color: #07f;
+	--accent-color: hsla(8, 75%, 63%, 1);
+	--accent-color-dark: hsla(8, 75%, 55%, 1);
+
+	--accent-color: HSLA(224, 30%, 50%, 1);
+	--accent-color-dark: HSLA(224, 30%, 40%, 1);
+
+	--dark-color: HSLA(215, 5%, 43%, 1);
+	--dark-color-alt: HSLA(215, 5%, 63%, 1);
+
+	--text-color: #333;
+	--medium-color: #bbb;
+	--light-color:rgb(106, 237, 194);
+	--page-color: #fafafa;
+	--soft-color: hsla(10, 12%, 85%, 1);
+
+	--margin-xxl: 3rem;
+	--margin-xl: 2rem;
+	--margin-lg: 1rem;
+	--margin-med: 0.66rem;
+	--margin-sm: 0.33rem;
+
+	--base-font-size: 16pt;
+	--border-radius-big: 9px;
+	--border-radius: 6px;
+	--rounded-radius: 4rem;
+
+	--padding-xxl: 2rem;
+	--padding-xl: 1.4rem;
+	--padding-lg: 1rem;
+	--padding-med: 0.66rem;
+	--padding-sm: 0.33rem;
+
+	--font: Lato;
+	}
+
+	menu.hmenu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position: relative;
+	margin: 0.25 rem;
+	padding-bottom: 0.2rem;
+	background-color: var(--light-color);
+	border-radius: var(--border-radius-big);
+	text-align: center;
+	}
+	menuitem {
+		flex: 1 0 0;
+		margin: 0.25rem;
+		transition: opacity 0.2s ease;
+	}
+
+	a.button{
+		-webkit-appearance: button;
+		-moz-appearance: button;
+		appearance: button;
+
+		text-decoration:solid;
+		color: initial;
 	}
 	.pages{
 		text-align:center;
@@ -76,7 +140,16 @@
 </style>
 
 <body>
+	<menu class='hmenu'>		
+		<menuitem class='active'>
+		<a href="/kvp" class="button">Key Value Proposition</a>
+		</menuitem>
+		<menuitem>
+		<a href='/product' class = "button"> Product Information </a>
+		</menuitem>
+	</menu>
 	<div class = 'header'>
+
 		<h1>Grocery Tracker</h1>
 		<p class = 'info'>
 		We aim to make at home cooking and shopping for groceries more convienent for folks who are busy or don't want to spend time searching through their fridge or           cupboards to check if they have particular food items. Our system will allow a user to scan their groceries or receipt using a camera which will then pass an image to a ML model which will identify the product and add it to a users current inventory. Our product will also track the expiration dates of the items scanned and alert the user to when products are close to expiring and give them an option to order more or add it to their shopping list. Grocery Tracker (name subject to change) will also be able to take user assigned recipes and query the database which stores their current items to determine whether they have everything they need.
@@ -108,12 +181,7 @@
 	</aside>
 	</section>
 
-	<hr>
-
-	<div class = 'pages'>
-		<a style="font-size:20px" href="/kvp">Key Value Proposition</a>
-		<a style="font-size:20px" href="/product">Product Information</a>
-	</div>
+	<!-- <hr> -->
 
 	<hr>
 
