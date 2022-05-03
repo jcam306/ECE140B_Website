@@ -12,6 +12,12 @@ def product_page(req):
 
 def kvp_page(req):
    return FileResponse("kvp.html")
+
+def mockUI_page(req):
+   return FileResponse("mockUI.html")
+
+def designLaws_page(req):
+   return FileResponse("designLaws.html")
  
 #Line below tells executor to start from here
 if __name__ == '__main__':
@@ -33,11 +39,11 @@ if __name__ == '__main__':
  
        # Create route that handles server requests at /mockUI
       config.add_route('mockUI', '/mockUI' )
-      config.add_view(kvp_page, route_name = 'mockUI')
+      config.add_view(mockUI_page, route_name = 'mockUI')
 
       # Create route that handles server requests at /designLaws
       config.add_route('designLaws', '/designLaws' )
-      config.add_view(kvp_page, route_name = 'designLaws')
+      config.add_viewd(designLaws_page, route_name = 'designLaws')
       
        # Add a static view
       config.add_static_view(name='/', path='./public', cache_max_age=3600)
