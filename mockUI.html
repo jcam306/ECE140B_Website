@@ -3,7 +3,7 @@
 
 <head>
 
-	<title>Product Information</title>
+	<title>Product Mock UI</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,7 +45,7 @@
 	--padding-sm: 0.33rem;
 
 	--font: Lato;
-	}	
+	}
 	body{
 		/* background-color:seashell; */
 		background:rgb(230, 229, 229);
@@ -87,7 +87,7 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	position: relative;
-	margin: 0.2 rem;
+	margin: 0.25 rem;
 	padding-bottom: 0.2rem;
 	background-color: var(--light-color);
 	border-radius: var(--border-radius-big);
@@ -106,9 +106,6 @@
 
 		text-decoration:solid;
 		color: initial;
-	}
-	.benefits{
-		text-align: left;
 	}
 	.pages{
 		text-align:center;
@@ -149,53 +146,42 @@
 		<a href="/" class="button">Home</a>
 		</menuitem>
 		<menuitem>
-		<a href='/kvp' class = "button"> Key Value Proposition </a>
+		<a href='/product' class = "button"> Product Information </a>
 		</menuitem>
 		<menuitem>
-		<a href="/mockUI" class = "button"> Product Mock UI</a>
+		<a href="/kvp" class = "button"> Key Value Proposition</a>
 		</menuitem>
 		<menuitem>
 		<a href="/designLaws" class = "button"> Design Laws Examples </a>
 		</menuitem>
 	</menu>
 	<div class = 'header'>
-		<h1>Product Information</h1>
+		<h1>Product Mock UI </h1>
 	</div>
 
 	<section>
-	<aside>
-		<h3> Who is this Product for?</h3>
-		We are building Grocery Tracker to be for busy people who buy groceries and can't get a smart fridge. Our key customers we are targeting are young parents, college students, young workers living alone, and apartment dwellers or renters that want something like a smart fridge but can't afford to spend thousands of dollars on one.
-	</aside>
-	<aside>
-		<h3> What does it do?</h3>
-		Our Grocery Tracker product uses a camera that keeps track of what is in the fridge, tells you what you have and how much while youre out shopping, a database that tracks when a product in the fridge expires or close to expiring, and can automatically order common products when they expire or run out.
-	</aside>
-	</section>
-	<section>
-	<aside>
-		<h3> How it works </h3>
-		Grocery Tracker consists of a camera, a contact sensor, and a raspberry pi (or pi zero if we can eventually get one...). The camera will take images of what the user is putting in/taking out of the fridge and update a database which stores each users inventory accordingly. The contact sensor will determine when the camera is active and images taken by the video will be sent to a Computer Vision algorithm or API to determine what each grocery item is.
-	</aside>
-	<aside>
-		<h3> Key Benefits</h3>
-		<ul class ='benefits'>
-			<li>The camera pod in the fridge scans products as they are added / removed</li>
-			<li>Lets you keep track of the amounts and expirations of each product and warns you when they run out / expire</li>
-			<li>Can be set to automatically restock certain groceries</li>
-			<li>Can scan a receipt instead of / in addition to using the camera to add new items to the database</li>
-			<li>Can scrape a recipe of the internet and tell you which ingredients you are missing</li>
-			<li>If you have multiple pods in the home, Grocery Tracker can tell you which fridge contains which food product</li>
-		</ul>
+		<aside>
+			<h3> How will this product be valued?</h3>
+			Grocery Tracker will be valued by customers because it will make their lives easier by simplifying keeping track of what groceries they have, when those groceries expire, and making it easy for a user to check if they have the ingredients at home that they need for a recipe while they are shopping shopping.
+		</aside>
+		<aside>
+			<h3>Who are our competitors? </h3>
+			Our competitors include manufacturers of popular smart fridges such as the many made by Samsung of LG electronics. Our more direct competitor is the FridgeCam made by a company called Smarter who makes product to turn a home into a smart home.
+		</aside>
+		</section>
+		<section>
+		<aside>
+			<h3> Why will this procuct be valued?</h3>
+			Our product will be valued because it is cheap ($100) when compared to buying a whole new smart fridge. We will be valued more than our most direct competitor Smarter FridgeCam becuase not only does our product keep track of items in a users inventory, but also allows users to see what they currently have in their fridge when they are out shopping. Additionally we offer more features, such as helping a user check if they have all the ingredients they need for a certain recipe by comparing a given recipe and the users current inventory.
+		</aside>
+		<aside>
+			<h3> Why choose Grocery Tracker?</h3>
+			Grocery Tracker is a great choice because it is cheaper than a smart fridge and offers many more features than a product like the Smarter FridgeCam.
 		</aside>
 	</section>
 
 	<hr>
-	<div style="text-align: center;">
-		<img src="https://i.ibb.co/18KhgGy/Empathy-Map.jpg" alt="Empathy-Map" border="0" height="500" width="500"> 
-	</div>
-	<hr>
-
+	
 	<section class = 'links'>
 		<aside class = 'links'>
 			<p class = 'footer'><i>Contact Me: </i></p>
@@ -221,6 +207,7 @@
 			</div>
 		</aside>
 	</section>
+
 	<div class = "bottom">
 		<button> <a href="https://github.com/jcam306" target="=_blank"> <i class="fa fa-github fa-2x"></i> </a> </button>
 		<button> <a href="https://www.linkedin.com/in/jacob-camarillo-8b2911220/" target="_blank"> <i class="fa fa-linkedin fa-2x"> </i> </a> </button>

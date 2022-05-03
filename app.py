@@ -31,6 +31,14 @@ if __name__ == '__main__':
       config.add_route('kvp', '/kvp' )
       config.add_view(kvp_page, route_name = 'kvp')
  
+       # Create route that handles server requests at /mockUI
+      config.add_route('mockUI', '/mockUI' )
+      config.add_view(kvp_page, route_name = 'mockUI')
+
+      # Create route that handles server requests at /designLaws
+      config.add_route('designLaws', '/designLaws' )
+      config.add_view(kvp_page, route_name = 'designLaws')
+      
        # Add a static view
       config.add_static_view(name='/', path='./public', cache_max_age=3600)
       
