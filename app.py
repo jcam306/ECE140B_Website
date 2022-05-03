@@ -43,7 +43,7 @@ if __name__ == '__main__':
 
       # Create route that handles server requests at /designLaws
       config.add_route('designLaws', '/designLaws' )
-      config.add_viewd(designLaws_page, route_name = 'designLaws')
+      config.add_view(designLaws_page, route_name = 'designLaws')
       
        # Add a static view
       config.add_static_view(name='/', path='./public', cache_max_age=3600)
