@@ -18,6 +18,12 @@ def mockUI_page(req):
 
 def designLaws_page(req):
    return FileResponse("designLaws.html")
+
+def keyProductInteractions_page(req):
+   return FileResponse("KeyProductInteractions.html")
+
+def features_page(req):
+   return FileResponse("features.html")
  
 #Line below tells executor to start from here
 if __name__ == '__main__':
@@ -44,6 +50,14 @@ if __name__ == '__main__':
       # Create route that handles server requests at /designLaws
       config.add_route('designLaws', '/designLaws' )
       config.add_view(designLaws_page, route_name = 'designLaws')
+
+      # Create route that handles server requests at /KeyProductInteractions
+      config.add_route('KeyProductInteractions', '/KeyProductInteractions' )
+      config.add_view(keyProductInteractions_page, route_name = 'KeyProductInteractions')
+
+      # Create route that handles server requests at /features
+      config.add_route('features', '/features' )
+      config.add_view(features_page, route_name = 'features')
       
        # Add a static view
       config.add_static_view(name='/', path='./public', cache_max_age=3600)
