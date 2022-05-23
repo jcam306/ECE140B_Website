@@ -24,7 +24,13 @@ def keyProductInteractions_page(req):
 
 def features_page(req):
    return FileResponse("features.html")
- 
+
+# def costs_page(req):
+#    return FileResponse("costs.html")
+
+# def  revenue_page(req):
+#    return FileResponse("revenue.html")
+
 #Line below tells executor to start from here
 if __name__ == '__main__':
    with Configurator() as config:
@@ -58,7 +64,15 @@ if __name__ == '__main__':
       # Create route that handles server requests at /features
       config.add_route('features', '/features' )
       config.add_view(features_page, route_name = 'features')
-      
+
+      # # Create route that handles server requests at /costs
+      # config.add_route('costs', '/costs' )
+      # config.add_view(costs_page, route_name = 'costs')
+
+      # # Create route that handles server requests at /revenue
+      # config.add_route('revenue', '/revenue' )
+      # config.add_view(revenue_page, route_name = 'revenue')
+
        # Add a static view
       config.add_static_view(name='/', path='./public', cache_max_age=3600)
       

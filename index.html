@@ -96,6 +96,7 @@
 		flex: 1 0 0;
 		margin: 0.25rem;
 		transition: opacity 0.2s ease;
+		font-size: 16px;
 	}
 
 	a.button{
@@ -145,20 +146,25 @@
 		<a href="/kvp" class="button">Key Value Proposition</a>
 		</menuitem>
 		<menuitem>
-		<a href='/product' class = "button"> Product Information </a>
+		<a href='/product' class = "button">Product Information</a>
 		</menuitem>
 		<menuitem>
-		<a href="/mockUI" class = "button"> Product Mock UI</a>
+		<a href="/mockUI" class = "button">Mock UI</a>
 		</menuitem>
 		<menuitem>
-		<a href="/designLaws" class = "button"> Design Laws Examples </a>
+		<a href="/designLaws" class = "button">Design Laws</a>
 		</menuitem>
 		<menuitem>
-		<a href="/features" class = "button"> Product Features </a>
+		<a href="/features" class = "button">Features</a>
 		</menuitem>
 		<menuitem>
-		<a href="/KeyProductInteractions" class = "button"> Key Product Interactions </a>
+		<a href="/KeyProductInteractions" class = "button">Key Product Interactions</a>
 		</menuitem>
+		<!-- <a href="/costs" class = "button">Costs</a>
+		</menuitem>
+		<menuitem>
+		<a href="/revenue" class = "button">Revenue Model</a>
+		</menuitem> -->
 	</menu>
 	<div class = 'header'>
 
@@ -195,7 +201,99 @@
 
 	<!-- <hr> -->
 
-
+	<h2>Product Costs and Revenue Model</h2>
+	<section>
+	<aside>
+		<h3> Costs </h3>
+		<p style="text-align: left";>
+			The price of manufacturing for our product is $39. On top of the cost of the materials and labor we must also consider
+			the cost of ClarifAI ($30/month) which we use to distinguish items and the cost of the servers ($30-50/month at small scale)
+			needed to run ClarifAI and store each customers' current inventory in MySQL database.
+		</p>
+		<ul style="text-align: left; display:flex; align-content:center;">
+			<li style="margin-right:3.5rem;">
+				Raw Material: $36
+				<ul style="text-align: left;">
+					<li>
+						Raspberry pi: $15
+					</li>
+					<li>
+						Camera: $17
+					</li>
+					<li>
+						Contact Sensor: $4
+					</li>
+				</ul>
+			</li>
+			<li style="margin-right:2.5rem;">
+				Labor: $3 
+				<ul>
+					<li>
+						10 min to create one circuit.
+					</li>
+					<li>
+						6 units/hour.
+					</li>
+					<li>
+						Employee cost: $18-20/hr.
+					</li>
+					<li>
+						Cost per item: ~$3.
+					</li>
+				</ul>
+			</li>
+			<li style="margin-right:3rem;">
+				Manufacturing: $39
+				<ul>
+					<li>
+						Cost of materials: $36
+					</li>
+					<li>
+						Cost of labor: $3
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</aside>
+	<aside>
+		<!-- This should include a discussion of the channels where you'll sell your product (retail, online, ad-based, etc) - and the
+			annual revenue you expect to earn from each channel.  
+			Make sure to articulate the revenue streams for each component of your revenue model. 
+			For example, you might sell a hardware product for a one-time fee, and have a recurring monthly subscription fee. -->
+		<h3> Revenue Model </h3>
+		<p style="text-align: left;">
+			We expect to sell 5000-7000 units a year at $65 per item. This would result in a net revenue of $325k-$455k per year from online sales.
+			We also can create revenue from advertisements on the phone app which users will use to view their current inventory of product. 
+			With an estimate of a customer using the app 4-5 times a month and 10000 users this would result in an average of ~$6/month of advertisement revenue
+			per customer which equates to roughly $102k per year (source: https://www.google.com/adsense/start/#calculator). 
+			This brings our total revenue to $427k-557k per year if we estimate 10000 current users.
+		</p>
+			<ul style="text-align: left; display:flex; align-content:center;">
+				<li style="margin-right:3.5rem;">
+					Online Sales: $325k-455k/year
+					<ul style="text-align: left;">
+						<li>
+							Price of Hardware: $65
+						</li>
+						<li>
+							Sales per year: 5000-7000
+						</li>
+					</ul>
+				</li>
+				<li style= "margin-right:2.5rem">
+					Advertisements ~$102k/year
+					<ul style="text-align: left;">
+						<li>
+							Estimated number of users: 10000
+						</li>
+						<li>
+							Estimated views/month per customer: 4-5
+						</li>
+					</ul>
+				</li>
+			</ul>
+	</aside>
+	</section>	
 
 	<section class = 'links'>
 		<aside class = 'links'>
